@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title> HTML | Tutorials </title>
+    <link rel="icon" type="image" href="html.png">
+</head>
+<body>
+<!------------------- logo Designe ------------------->
+    <nav id="navbar">
+        <div class="logo">
+            <a href="../main.html"><img src="html.png" alt=""> </a>
+            <a href="#"> <span> HTML</span> Tutorials </a>
+        </div>
+    </nav>
+
+<!------------------- Menu Desingne ------------------->
+    <section class="menu">
+            <ul>
+                <li><a href="intro.html"> HTML <br> Introduction </a> </li>
+                <li><a href="basic.html"> HTML <br> Basic </a> </li>
+                <li><a href="element.html"> HTML <br>Elements </a> </li>
+                <li><a href="attributes.html"> HTML <br>Attributes </a> </li>
+ 
+                <li><a href="heading.html"> HTML <br> Headings </a> </li>
+                <li><a href="paragraph.html"> HTML <br> Paragraphs </a> </li>
+                <li><a href="style.html"> HTML <br> Styles </a> </li>
+                <li><a href="text.html"> HTML <br> Formatting </a> </li>
+
+                <li><a href="quotation.html"> HTML <br>Quotation </a> </li>
+                <li><a href="comment.html"> HTML <br> Comments</a> </li>
+                <li><a href="color.html"> HTML <br> Colors </a> </li>
+                <li><a href="css.html"> HTML <br> Styles - CSS</a> </li>
+    
+                <li><a href="link.html"> HTML <br> Links </a> </li>
+                <li><a href="image.html"> HTML <br> Images</a> </li>
+                <li><a href="favicon.html"> HTML <br> Favicon </a> </li>
+                <li><a href="table.html"> HTML <br> Tables </a> </li>
+                
+                <li><a href="list.html"> HTML <br> Lists </a> </li>
+                <li><a href="block.html"> HTML <br> Block and Inline </a> </li>
+                <li><a href="class.html"> HTML <br> class </a> </li>
+                <li><a href="id.html"> HTML <br> id </a> </li>
+            
+                <li><a href="iframes.html"> HTML <br> Iframes </a> </li>
+                <li><a href="head.html"> HTML <br> Head </a> </li>
+                <li><a href="layout.html"> HTML <br> Layout </a> </li>
+                <li><a href="responsive.html"> HTML <br> Responsive</a> </li>
+            </ul>
+    </section>
+
+<!------------------- Footer Page ------------------->
+    <footer>
+        <div class="last">
+            <a href="#"> Developed by | <samp>Rushikesh </samp> Guided by | <samp> Nilesh Sir </Samp> </a>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > 20) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+
+</html>

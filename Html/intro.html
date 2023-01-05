@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charsF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Introduction </title>
+    <link rel="icon" type="image" href="html.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        /* custom scroll bar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75)), url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            padding: 40px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            display: flex;
+            height: 60px;
+            width: 60px;
+        }
+
+        .logo a {
+            margin-left: 20px;
+            font-size: 45px;
+            font-weight: 310;
+            color: white;
+        }
+
+        span {
+            color: crimson;
+            font-size: 50px;
+            font-weight: 350;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px 0px 0px 0px;
+            margin: 0px 0px 30px 0px;
+        }
+
+        .div1 {
+            width: 40%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 83px 10px;
+        }
+
+        .div1 h6 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 190px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div1 p {
+            padding: 0px 45px;
+            margin: 30px 0px;
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+        .div2 {
+            width: 40%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 30px 10px;
+        }
+
+        .div2 h6 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 110px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div2 p {
+            padding: 0px 45px;
+            margin: 30px 0px;
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+
+        .div3 {
+            margin: 50px 0px 0px 0px;
+            width: 40%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 30px 10px;
+        }
+
+        .div3 h6 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 230px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div3 p {
+            padding: 0px 45px;
+            margin: 30px 0px;
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+        .div4 {
+            width: 40%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 45px 10px;
+            margin: 45px 0px 0px 0px;
+
+        }
+
+        .div4 h6 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 275px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div4 p {
+            padding: 0px 45px;
+            margin: 30px 0px;
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 60px 0px;
+        }
+
+        .btn a {
+            background: crimson;
+            color: #fff;
+            font-size: 20px;
+            padding: 12px 36px;
+            margin: 0px 20px;
+            font-weight: 400;
+            border-radius: 6px;
+            border: 2px solid crimson;
+            transition: all 0.3s ease;
+        }
+
+        .btn a:hover {
+            color: white;
+            background: none;
+        }
+
+        /* Media Quarey*/
+        @media(max-width:450px) {
+
+            .navbar {
+                position: fixed;
+                width: 100%;
+                background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+                padding: 15px 0px;
+            }
+
+            .logo img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .logo a {
+                margin: 0px 0px 0px 10px;
+                font-size: 20px;
+            }
+
+            span {
+                font-size: 25px;
+            }
+
+            .container {
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .div1 {
+                width: 100%;
+                margin: 60px 0px 0px;
+                border-radius: 0px;
+                padding: 30px 0px;
+                background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            }
+
+            .div1 h6 {
+                font-size: 18px;
+                font-weight: 110;
+                font-weight: 110;
+                width: 170px;
+            }
+
+            .div1 p {
+                font-size: 15px;
+                font-weight: 210;
+                padding: 0px 20px;
+                margin: 10px 0px;
+                color: white;
+                line-height: 35px;
+            }
+
+            .div2 {
+                width: 100%;
+                margin: 0px 0px 0px;
+                border-radius: 0px;
+                background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            }
+
+            .div2 h6 {
+                font-size: 18px;
+                font-weight: 110;
+                font-weight: 110;
+                width: 110px;
+            }
+
+            .div2 p {
+                font-size: 15px;
+                font-weight: 210;
+                padding: 0px 20px;
+                margin: 10px 0px;
+                color: white;
+                line-height: 35px;
+
+            }
+
+            .div3 {
+                width: 100%;
+                margin: 0px 0px 0px;
+                border-radius: 0px;
+                background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            }
+
+            .div3 h6 {
+                font-size: 18px;
+                font-weight: 110;
+                font-weight: 110;
+                width: 200px;
+            }
+
+            .div3 p {
+                font-size: 15px;
+                font-weight: 210;
+                padding: 0px 20px;
+                margin: 10px 0px;
+                color: white;
+                line-height: 35px;
+
+            }
+
+            .div4 {
+                width: 100%;
+                margin: 00px 0px 0px;
+                border-radius: 0px;
+                background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            }
+
+            .div4 h6 {
+                font-size: 18px;
+                font-weight: 110;
+                font-weight: 110;
+                width: 245px;
+            }
+
+            .div4 p {
+                font-size: 15px;
+                font-weight: 210;
+                padding: 0px 20px;
+                margin: 10px 0px;
+                color: white;
+                line-height: 35px;
+
+            }
+
+            .btn {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 30px 0px;
+            }
+
+            .btn a {
+                background-color: crimson;
+                color: white;
+                font-size: 10px;
+                font-weight: 70;
+                margin: 0px 10px;
+                padding: 5px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="html.html"><img src="html.png" alt=""> </a>
+            <a href="#"> <span> HTML</span> Introduction </a>
+        </div>
+    </nav>
+
+    <nav class="container">
+        <div class="div1">
+            <h6> What is HTML? </h6>
+            <p> HTML stands for Hyper Text Markup Language <br>
+                HTML is the standard markup language for creating Web pages <br>
+                HTML describes the structure of a Web page <br>
+                HTML consists of a series of elements <br>
+                HTML elements tell the browser how to display the content <br>
+                HTML elements label pieces of content such as "this is a heading", <br> "this is a paragraph", "this is
+                a
+                link",
+                etc.
+            </p>
+        </div>
+        </div>
+
+        <div class="div2">
+            <h6> Example </h6>
+            <p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;title&gt; Page Title &lt;/title&gt; <br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+                &lt;p&gt;My first paragraphp&lt;/p&gt; <br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </p>
+        </div>
+    </nav>
+
+    <nav class="container">
+        <div class="div3">
+            <h6>In the above example</h6>
+            <p>
+                The &lt; !DOCTYPE html &gt; declaration defines that this document is an HTML5 document<br>
+                The &lt; html &gt; element is the root element of an HTML page<br>
+                The &lt; head &gt; element contains meta information about the HTML page<br>
+                The &lt; title &gt; element specifies a title for the HTML page (which is shown in the browser's
+                title
+                bar or in the page's tab)<br>
+                The &lt; p &gt; element defines a large heading<br>
+            </p>
+        </div>
+
+        <div class="div4">
+            <h6> What is an HTML Element ? </h6>
+            <p>
+                An HTML element is defined by a start tag, some content, and an end tag:<br>
+                &lt; tagname &gt; Content goes here... &lt; /tagname &gt;<br>
+                The HTML element is everything from the start tag to the end tag:<br>
+                &lt; h1 &gt; My First Heading &lt; /h1 &gt;<br>
+                &lt; p &gt;My first paragraph. &lt; /p &gt; <br>
+            </p>
+        </div>
+    </nav>
+
+    <div class="btn" ">
+        <a href=" html.html">Prev </a>
+        <a href="html.html">Home </a>
+        <a href="basic.html">Next </a>
+    </div>
+
+</body>
+
+</html>

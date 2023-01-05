@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <title> W3school..!</title>
+</head>
+
+<body>
+    <!----------------------------- Navbar --------------------------------->
+    <nav id="navbar">
+        <div class="logo"><a href="#"><span> W3</span> schools.</a></div>
+        <ul class="menu">
+            <li><a href="#home" class="menu-btn">Home</a></li>
+            <li><a href="#about" class="menu-btn">About</a></li>
+            <li><a href="#services" class="menu-btn">Services</a></li>
+            <li><a href="#contact" class="menu-btn">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <section class="home" id="home">
+        <div class="text-1">Welcome To.... </div>
+        <div class="text-2"> <span> W3</span>school.</div>
+        <div class="text-3">We'are Learning <span class="typing"></span></div>
+        <a href="main.html" target="_blank"> Click Me </a>
+    </section>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > 20) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        var typed = new Typed(".typing", {
+            strings: ["Web Development", "Full Stack Development","Html", "Css","Javascript","Core Java",],
+            typeSpeed: 180,
+            backSpeed: 80,
+            loop: true
+        });
+
+        $('#navbar .menu li a').click(function () {
+            // applying again smooth scroll on menu items click
+            $('html').css("scrollBehavior", "smooth");
+        });
+
+        // toggle menu/navbar script
+        $('.menu-btn').click(function () {
+            $('#navbar .menu').toggleClass("active");
+            $('.menu-btn i').toggleClass("active");
+        });
+    </script>
+
+</body>
+
+</html>

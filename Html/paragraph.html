@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charsF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Paragraphs </title>
+    <link rel="icon" type="image" href="html.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        /* custom scroll bar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75)), url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            padding: 40px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            display: flex;
+            height: 60px;
+            width: 60px;
+        }
+
+        .logo a {
+            margin-left: 20px;
+            font-size: 45px;
+            font-weight: 310;
+            color: white;
+        }
+
+        span {
+            color: crimson;
+            font-size: 50px;
+            font-weight: 350;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .div1 {
+            width: 30%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 30px 10px;
+            margin: -175px 0px 0px 0px;
+        }
+
+        .div1 h1 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 180px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div1 ul {
+            list-style: none;
+            padding: 0px 20px;
+            margin: 20px 0px;
+        }
+
+        .div1 li {
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+        .div2 {
+            width: 30%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 30px 10px;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .div2 h1 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 155px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div2 ul {
+            list-style: none;
+            padding: 0px 20px;
+            margin: 20px 0px;
+        }
+
+        .div2 li {
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+        .div3 {
+            width: 30%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 45px 10px;
+            margin: -75px 0px 0px 0px;
+        }
+
+        .div3 h1 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 250px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div3 ul {
+            list-style: none;
+            padding: 0px 20px;
+            margin: 20px 0px;
+        }
+
+        .div3 li {
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+
+        .div4 {
+            width: 30%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 30px 10px;
+            margin: -45px 0px 0px 0px;
+        }
+
+        .div4 h1 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 180px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div4 ul {
+            list-style: none;
+            padding: 0px 20px;
+            margin: 20px 0px;
+        }
+
+        .div4 li {
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+        .div5 {
+            width: 30%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 30px 10px;
+            margin: 60px 0px 0px 0px;
+        }
+
+        .div5 h1 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div5 ul {
+            list-style: none;
+            padding: 0px 20px;
+            margin: 20px 0px;
+        }
+
+        .div5 li {
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+        .div6 {
+            width: 30%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 45px 10px;
+            margin: -42px 0px 0px 0px;
+        }
+
+        .div6 h1 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 350px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div6 ul {
+            list-style: none;
+            padding: 0px 20px;
+            margin: 20px 0px;
+        }
+
+        .div6 li {
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 60px 0px;
+        }
+
+        .btn a {
+            background: crimson;
+            color: #fff;
+            font-size: 20px;
+            padding: 12px 36px;
+            margin: 0px 20px;
+            font-weight: 400;
+            border-radius: 6px;
+            border: 2px solid crimson;
+            transition: all 0.3s ease;
+        }
+
+        .btn a:hover {
+            color: white;
+            background: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"> <img src="html.png" alt=""> </a>
+            <a href="#"> <span> HTML</span> Paragraphs </a>
+        </div>
+    </nav>
+
+    <nav class="container">
+        <div class="div1">
+            <h1> HTML Paragraphs </h1>
+            <ul>
+                <li> The HTML &lt;p&gt; element defines a paragraph</li>
+                <li> A paragraph always starts on a new line, and browsers automatically add some white space (a margin)
+                    <br> before and after a paragraph
+                </li>
+            </ul>
+        </div>
+
+        <div class="div2">
+            <h1> HTML Display </h1>
+            <ul>
+                <li>You cannot be sure how HTML will be displayed
+                <li>
+                <li>Large or small screens, and resized windows will create different results </li>
+                <li>With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code
+                </li>
+                <li>With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code
+                </li>
+                <li>The browser will automatically remove any extra spaces and lines when the page is displayed </li>
+            </ul>
+        </div>
+
+        <div class="div3">
+            <h1> HTML Horizontal Rules</h1>
+            <ul>
+                <li>The &lt;hr&gt; tag defines a thematic break in an HTML page, and is most often displayed as a
+                    horizontal
+                    rule </li>
+                <li>The &lt;hr&gt; element is used to separate content (or define a change) in an HTML page </li>
+                <li>The &lt;hr&gt; tag is an empty tag, which means that it has no end tag </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="container">
+        <div class="div4">
+            <h1> HTML Line Breaks</h1>
+            <ul>
+                <li>The HTML &lt;br&gt; element defines a line break </li>
+                <li>Use &lt;br&gt; if you want a line break (a new line) without starting a new paragraph </li>
+                <li>The &lt;br&gt; tag is an empty tag, which means that it has no end tag </li>
+            </ul>
+        </div>
+
+        <div class="div5">
+            <h1> The Poem Problem </h1>
+            <ul>
+                <li> The Poem will be displayed on the single line if we use the &lt;p&gt; tag </li>
+            </ul>
+        </div>
+
+        <div class="div6">
+            <h1> Solution - The HTML &lt;pre&gt; Element </h1>
+            <ul>
+                <li> The HTML &lt;pre&gt; element defines preformatted text </li>
+                <li> The text inside a &lt;pre&gt; element is displayed in a fixed-width font (usually Courier), <br>
+                    and it
+                    preserves both spaces and line breaks </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="btn">
+        <a href="heading.html">Prev </a>
+        <a href="html.html">Home </a>
+        <a href="style.html">Next </a>
+    </div>
+
+
+
+</body>
+
+</html>

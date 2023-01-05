@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charsF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Table </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0px;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75)), url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        .logo {
+            margin-top: 20px;
+            padding: 50px 0px;
+            text-align: center;
+
+        }
+
+        .logo img {
+            margin-left: 75px;
+            float: left;
+            height: 70px;
+            width: 70px;
+        }
+
+        .logo a {
+            margin-right: 130px;
+            color: white;
+            font-size: 50px;
+            font-weight: 250;
+        }
+
+        span {
+            color: crimson;
+            font-size: 60px;
+            font-weight: 350;
+        }
+
+        .div1 {
+            margin: auto;
+            width: 80%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            padding-top: 30px;
+            padding-bottom: 50px;
+            margin-top: 60px;
+        }
+
+        .div1 h6 {
+            margin: auto;
+            background-color: crimson;
+            border-radius: 15px;
+            padding-top: 18px;
+            height: 70px;
+            width: 400px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 100px;
+        }
+
+        .div1 ul {
+            list-style: none;
+            margin-left: 80px;
+            margin-top: 60px;
+        }
+
+        .div1 li {
+            font-size: 25px;
+            font-weight: 100;
+            padding: 10px 0px;
+            color: white;
+        }
+
+        .div2 {
+            margin: auto;
+            width: 80%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            padding-top: 30px;
+            padding-bottom: 50px;
+            margin-top: 100px;
+        }
+
+        .div2 h6 {
+            margin: auto;
+            background-color: crimson;
+            border-radius: 15px;
+            padding-top: 18px;
+            height: 70px;
+            width: 500px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 100px;
+        }
+
+        .div2 ul {
+            list-style: none;
+            margin-left: 80px;
+            margin-top: 60px;
+        }
+
+        .div2 li {
+            font-size: 25px;
+            font-weight: 100;
+            padding: 10px 0px;
+            color: white;
+        }
+
+        .div3 {
+            margin: auto;
+            width: 80%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            padding-top: 30px;
+            padding-bottom: 50px;
+            margin-top: 100px;
+        }
+
+        .div3 h6 {
+            margin: auto;
+            background-color: crimson;
+            border-radius: 15px;
+            padding-top: 18px;
+            height: 70px;
+            width: 600px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 100px;
+        }
+
+        .div3 ul {
+            list-style: none;
+            margin-left: 80px;
+            margin-top: 60px;
+        }
+
+        .div3 li {
+            font-size: 25px;
+            font-weight: 100;
+            padding: 10px 0px;
+            color: white;
+        }
+
+        .div4 {
+            margin: auto;
+            width: 80%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            padding-top: 30px;
+            padding-bottom: 50px;
+            margin-top: 100px;
+        }
+
+        .div4 h6 {
+            margin: auto;
+            background-color: crimson;
+            border-radius: 15px;
+            padding-top: 18px;
+            height: 70px;
+            width: 350px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 100px;
+        }
+
+        .div4 ul {
+            list-style: none;
+            margin-left: 80px;
+            margin-top: 60px;
+        }
+
+        .div4 li {
+            font-size: 25px;
+            font-weight: 100;
+            padding: 10px 0px;
+            color: white;
+        }
+
+        .div5 {
+            margin: auto;
+            width: 80%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            padding-top: 30px;
+            padding-bottom: 50px;
+            margin-top: 100px;
+        }
+
+        .div5 h6 {
+            margin: auto;
+            background-color: crimson;
+            border-radius: 15px;
+            padding-top: 18px;
+            height: 70px;
+            width: 350px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 100px;
+        }
+
+        .div5 ul {
+            list-style: none;
+            margin-left: 80px;
+            margin-top: 60px;
+        }
+
+        .div5 li {
+            font-size: 25px;
+            font-weight: 100;
+            padding: 10px 0px;
+            color: white;
+        }
+
+        .div6 {
+            margin: auto;
+            width: 80%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            padding-top: 30px;
+            padding-bottom: 50px;
+            margin-top: 100px;
+        }
+
+        .div6 h6 {
+            margin: auto;
+            background-color: crimson;
+            border-radius: 15px;
+            padding-top: 18px;
+            height: 70px;
+            width: 300px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 100px;
+        }
+
+        .div6 ul {
+            list-style: none;
+            margin-left: 80px;
+            margin-top: 60px;
+        }
+
+        .div6 li {
+            font-size: 25px;
+            font-weight: 100;
+            padding: 10px 0px;
+            color: white;
+        }
+
+        .div7 {
+            margin: auto;
+            width: 80%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            padding-top: 30px;
+            padding-bottom: 50px;
+            margin-top: 100px;
+        }
+
+        .div7 h6 {
+            margin: auto;
+            background-color: crimson;
+            border-radius: 15px;
+            padding-top: 18px;
+            height: 70px;
+            width: 300px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 100px;
+        }
+
+        .div7 ul {
+            list-style: none;
+            margin-left: 80px;
+            margin-top: 60px;
+        }
+
+        .div7 li {
+            font-size: 25px;
+            font-weight: 100;
+            padding: 10px 0px;
+            color: white;
+        }
+
+
+
+        .btn {
+            margin-top: 2%;
+            margin-bottom: 100px;
+            padding-top: 70px;
+            text-align: center;
+        }
+
+        .btn a {
+            margin: auto 30px;
+            background-color: crimson;
+            color: white;
+            font-size: 150%;
+            font-weight: 100;
+            padding: 10px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="logo">
+        <a href="index.html"> <img src="html.png" alt=""> </a>
+        <a href="#"> <span> HTML</span> Table </a>
+    </section>
+    <div class="div1">
+        <h6> Table Cells </h6>
+        <ul>
+            <li> Each table cell is defined by a &lt;td&gt; and a &lt;/td&gt; </li>
+            <li> Everything between &lt;td&gt; and &lt;/td&gt; are the content of the table cell </li>
+        </ul>
+    </div>
+
+    <div class="div2">
+        <h6> Table Headers </h6>
+        <ul>
+            <li> Sometimes you want your cells to be table header cells. In those cases use the &lt;th&gt; tag instead
+                of the &lt;td&gt; tag </li>
+        </ul>
+    </div>
+
+    <div class="div3">
+        <h6> HTML Table Tags </h6>
+        <ul>
+            <li> &lt;table&gt; Defines a table </li>
+            <li> &lt;th&gt; Defines a header cell in a table </li>
+            <li> &lt;tr&gt; Defines a row in a table </li>
+            <li> &lt;td&gt; Defines a cell in a table</li>
+            <li> &lt;caption&gt; Defines a table caption</li>
+            <li> &lt;colgroup&gt; Specifies a group of one or more columns in a table for formatting </li>
+            <li> &lt;col&gt; Specifies column properties for each column within a <colgroup> element </li>
+            <li> &lt;thead&gt; Groups the header content in a table </li>
+            <li> &lt;tbody&gt; Groups the body content in a table </li>
+            <li> &lt;tfoot&gt; Groups the footer content in a table</li>
+        </ul>
+    </div>
+
+    <div class="div4">
+        <h6> Define an HTML Table </h6>
+        <ul>
+            <li>
+                &lt;table&gt;<br>&nbsp;
+                &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Company&lt;/th&gt;<br>
+                &nbsp;&nbsp;&nbsp; &lt;th&gt;Contact&lt;/th&gt; <br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Country&lt;/th&gt;<br>
+                &nbsp;
+                &lt;/tr&gt;<br>&nbsp;
+                &lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp; &lt;td&gt;Maria
+                Anders&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Germany&lt;/td&gt;<br>
+                &nbsp;
+                &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Centro
+                comercial Moctezuma&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp; &lt;td&gt;Francisco
+                Chang&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Mexico&lt;/td&gt;<br>
+                &nbsp; &lt;/tr&gt;<br>&lt;/table&gt;
+            </li>
+        </ul>
+    </div>
+
+    <div class="div5">
+        <h6> Table Cells </h6>
+        <ul>
+            <li>td stands for table data.</li>
+            <li> Each table cell is defined by a &lt;td&gt; and a &lt;/td&gt tag </li>
+            <li>&lt;table&gt;<br>&nbsp;
+                &lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;Emil&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp; &lt;td&gt;Tobias&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Linus&lt;/td&gt;<br>
+                &nbsp;
+                &lt;/tr&gt;<br>&lt;/table&gt;</li>
+        </ul>
+    </div>
+
+    <div class="div6">
+        <h6> Table Rows </h6>
+        <ul>
+            <li> Each table cell is defined by a &lt;tr&gt; and a &lt;/tr &gt tag </li>
+            <li> tr stands for table row </li>
+            <li> &lt;table&gt;<br>&nbsp;
+                &lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;Emil&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp; &lt;td&gt;Tobias&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Linus&lt;/td&gt;<br>
+                &nbsp;
+                &lt;/tr&gt;<br>&nbsp;
+                &lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;16&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp; &lt;td&gt;14&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;10&lt;/td&gt;<br>
+                &nbsp;
+                &lt;/tr&gt;<br>&lt;/table&gt; </li>
+
+        </ul>
+    </div>
+
+    <div class="div7">
+        <h6> Table Headers</h6>
+        <ul>
+            <li> Sometimes you want your cells to be table header cells. In those cases use the &lt;th&gt; tag instead
+                of the &lt;/th&gt;tag:</li>
+            <li> th stands for table header </li>
+            <li>
+                &lt;table&gt;<br>&nbsp;
+                &lt;tr&gt;<br>&nbsp; &nbsp; &lt;th&gt;Person 1&lt;/th&gt;<br>
+                &nbsp;&nbsp;&nbsp; &lt;th&gt;Person 2&lt;/th&gt; <br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Person
+                3&lt;/th&gt;<br>
+                &nbsp;
+                &lt;/tr&gt;<br>&nbsp;
+                &lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;Emil&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp; &lt;td&gt;Tobias&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Linus&lt;/td&gt;<br>
+                &nbsp;
+                &lt;/tr&gt;<br>&nbsp;
+                &lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;16&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp; &lt;td&gt;14&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;10&lt;/td&gt;<br>
+                &nbsp;
+                &lt;/tr&gt;<br>&lt;/table&gt;
+            </li>
+        </ul>
+    </div>
+
+    <div class="btn">
+        <a href="favicon.html">Prev </a>
+        <a href=" index.html">Home </a>
+        <a href="list.html">Next </a>
+    </div>
+
+</body>
+
+</html>

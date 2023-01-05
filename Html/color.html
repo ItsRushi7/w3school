@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charsF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Color </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0px;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75)), url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        .logo {
+            margin-top: 20px;
+            padding: 50px 0px;
+            text-align: center;
+
+        }
+
+        .logo img {
+            margin-left: 75px;
+            float: left;
+            height: 70px;
+            width: 70px;
+        }
+
+        .logo a {
+            margin-right: 130px;
+            color: white;
+            font-size: 50px;
+            font-weight: 250;
+        }
+
+        span {
+            color: crimson;
+            font-size: 60px;
+            font-weight: 350;
+        }
+
+        .div1 {
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            padding: 40px 50px;
+            border-radius: 25px;
+
+        }
+
+        .div1 h1 {
+            padding: 10px 40px;
+            border-radius: 15px;
+            width: 300px;
+            background-color: crimson;
+            margin: 20px;
+            color: white;
+            font-size: 25px;
+            font-weight: 200;
+        }
+
+        .div1 h3 {
+            padding: 10px 30px;
+            font-size: 20px;
+            font-weight: 100;
+            margin: 10px 0px;
+            color: white;
+
+        }
+
+        .div2 {
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            width: 90%;
+            margin-top: 90px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 40px 50px;
+            text-align: center;
+
+        }
+
+        .div2 h1 {
+            text-align: center;
+            padding: 10px 40px;
+            border-radius: 15px;
+            width: 200px;
+            background-color: crimson;
+            margin: 20px 700px;
+            color: white;
+            font-size: 30px;
+            font-weight: 200;
+        }
+
+        .div2 h4 {
+            color: rgb(75, 69, 69);
+            text-align: center;
+            margin: 30px;
+            font-size: 20px;
+            font-weight: 50;
+            padding-top: 30px;
+            border-radius: 8px;
+            width: 200px;
+            height: 80px;
+            display: inline-block;
+        }
+
+        .btn {
+            margin-top: 2%;
+            margin-bottom: 100px;
+            padding-top: 70px;
+            text-align: center;
+        }
+
+        .btn a {
+            margin: auto 30px;
+            background-color: crimson;
+            color: white;
+            font-size: 150%;
+            font-weight: 100;
+            padding: 10px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="logo">
+        <a href="index.html"> <img src="html.png" alt=""> </a> 
+        <a href="#"> <span> HTML</span> Colors </a>
+</section>
+
+    <div class="div1">
+        <h1>Color Names</h1>
+        <h3>In HTML, a color can be specified by using a color name</h3>
+        <h3>HTML supports 140 colors </h3>
+        <h1>Background Color</h1>
+        <h3>You can set the background color for HTML elements </h3>
+        <h3>Example</h3>
+        <h3>&lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;</h3>
+        <h3>&lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;</h3>
+        <h1>Text Color</h1>
+        <h3>You can set the color of text:</h3>
+        <h3>Example</h3>
+        <h3>&lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt;</h3>
+        <h3>&lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt;</h3>
+        <h1>Border Color</h1>
+        <h3>You can set the color of borders:</h3>
+        <h3>Example</h3>
+        <h3>&lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt;</h3>
+        <h1>Color Values</h1>
+        <h3>In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA
+            values.</h3>
+        <h3>You can give RGB values as rgb(255, 99, 71)</h3>
+        <h3>You can you HEX values as #ff6347</h3>
+        <h3>You can you HSL values as hsl(9, 100%, 64%)</h3>
+        <h3>Following background color set with RGBA and HSLA values, which add an Alpha channel to the color (here we
+            have 50% transparency)</h3>
+        <h3>rgba(255, 99, 71, 0.5)</h3>
+        <h3>hsla(9, 100%, 64%, 0.5)</h3>
+        <h3>Example </h3>
+        <h3>&lt;h1 style="background-color:rgb(255, 99, 71);"&gt;...&lt;/h1&gt;</h3>
+        <h3>&lt;h1 style="background-color:#ff6347;"&gt;...&lt;/h1&gt;</h3>
+        <h3>&lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;...&lt;/h1&gt;</h3>
+        <h3>&lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;...&lt;/h1&gt;</h3>
+        <h3>&lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);"&gt;...&lt;/h1&gt;</h3>
+    </div>
+
+    <div class="div2">
+
+        <h1> Color </h1>
+        <h4 style="background-color: AliceBlue;">AliceBlue</h4>
+        <h4 style="background-color: AntiqueWhite;">AntiqueWhite</h4>
+        <h4 style="background-color: Aqua;">Aqua</h4>
+        <h4 style="background-color: Aquamarine;">Aquamarine</h4>
+        <h4 style="background-color: Azure;">Azure</h4>
+        <h4 style="background-color: Beige;">Beige</h4>
+        <h4 style="background-color: Bisque;">Bisque</h4>
+        <h4 style="background-color: Black;color: aliceblue;">Black</h4>
+        <h4 style="background-color: BlanchedAlmond;">BlanchedAlmond</h4>
+        <h4 style="background-color: Blue;color: aliceblue;">Blue</h4>
+        <h4 style="background-color: BlueViolet;">BlueViolet</h4>
+        <h4 style="background-color: Brown;">Brown</h4>
+        <h4 style="background-color: BurlyWood;">BurlyWood</h4>
+        <h4 style="background-color: CadetBlue;">CadetBlue</h4>
+        <h4 style="background-color: Chartreuse;">Chartreuse</h4>
+        <h4 style="background-color: Chocolate;">Chocolate</h4>
+        <h4 style="background-color: Coral;">Coral</h4>
+        <h4 style="background-color: CornflowerBlue;">CornflowerBlue</h4>
+        <h4 style="background-color: Cornsilk;">Cornsilk</h4>
+        <h4 style="background-color: Crimson;">Crimson</h4>
+        <h4 style="background-color: cyan;">cyan</h4>
+        <h4 style="background-color: DarkBlue;color: aliceblue;">DarkBlue</h4>
+        <h4 style="background-color: DarkCyan;">DarkCyan</h4>
+        <h4 style="background-color: DarkGoldenRod;">DarkGoldenRod</h4>
+        <h4 style="background-color: DarkGray;">DarkGray</h4>
+        <h4 style="background-color: DarkGreen;">DarkGreen</h4>
+        <h4 style="background-color: DarkKhaki;">DarkKhaki</h4>
+        <h4 style="background-color: DarkMagenta;">DarkMagenta</h4>
+        <h4 style="background-color: DarkOliveGreen;">DarkOliveGreen</h4>
+        <h4 style="background-color: DarkOrange;">DarkOrange</h4>
+        <h4 style="background-color: DarkOrchid;color: aliceblue;">DarkOrchid</h4>
+        <h4 style="background-color: DarkRed;color: aliceblue;">DarkRed</h4>
+        <h4 style="background-color: DarkSalmon;">DarkSalmon</h4>
+        <h4 style="background-color: DarkSeaGreen;">DarkSeaGreen</h4>
+        <h4 style="background-color: DarkSlateBlue;">DarkSlateBlue</h4>
+        <h4 style="background-color: DarkSlateGray;color: aliceblue;">DarkSlateGray</h4>
+        <h4 style="background-color: DarkTurquoise;">DarkTurquoise</h4>
+        <h4 style="background-color: DarkViolet;color: aliceblue;">DarkViolet</h4>
+        <h4 style="background-color: DeepPink;">DeepPink</h4>
+        <h4 style="background-color: DeepSkyBlue;">DeepSkyBlue</h4>
+
+        <h4 style="background-color: DimGray;">DimGray</h4>
+        <h4 style="background-color: DodgerBlue;">DodgerBlue</h4>
+        <h4 style="background-color: FireBrick;color: aliceblue;">FireBrick</h4>
+        <h4 style="background-color: FloralWhite;">FloralWhite</h4>
+        <h4 style="background-color: ForestGreen;">ForestGreen</h4>
+        <h4 style="background-color: Fuchsia;">Fuchsia</h4>
+        <h4 style="background-color: Gainsboro;">Gainsboro</h4>
+        <h4 style="background-color: GhostWhite;">GhostWhite</h4>
+        <h4 style="background-color: Gold;">Gold</h4>
+        <h4 style="background-color: GoldenRod;">GoldenRod</h4>
+        <h4 style="background-color: Gray;color: white;">Gray</h4>
+        <h4 style="background-color: Green;color: aliceblue;">Green</h4>
+        <h4 style="background-color: GreenYellow;">GreenYellow</h4>
+        <h4 style="background-color: HoneyDew;">HoneyDew</h4>
+        <h4 style="background-color: HotPink;">HotPink</h4>
+        <h4 style="background-color: IndianRed;">IndianRed</h4>
+        <h4 style="background-color: Indigo;color: aliceblue;">Indigo</h4>
+        <h4 style="background-color: Ivory;">Ivory</h4>
+        <h4 style="background-color: Khaki;">Khaki</h4>
+        <h4 style="background-color: Lavender;">Lavender</h4>
+        <h4 style="background-color: LavenderBlush;">LavenderBlush</h4>
+        <h4 style="background-color: LawnGreen;">LawnGreen</h4>
+        <h4 style="background-color: LemonChiffon;">LemonChiffon</h4>
+        <h4 style="background-color: LightBlue;">LightBlue</h4>
+        <h4 style="background-color: LightCoral;">LightCoral</h4>
+        <h4 style="background-color: LightCyan;">LightCyan</h4>
+        <h4 style="background-color: LightGoldenRodYellow;">L.GoldRodYellow</h4>
+        <h4 style="background-color: LightGray;">LightGray</h4>
+        <h4 style="background-color: LightGreen;">LightGreen</h4>
+        <h4 style="background-color: LightPink;">LightPink</h4>
+        <h4 style="background-color: LightSalmon;">LightSalmon</h4>
+        <h4 style="background-color: LightSeaGreen;">LightSeaGreen</h4>
+        <h4 style="background-color: LightSkyBlue;">LightSkyBlue</h4>
+        <h4 style="background-color: LightSlateGray;">LightSlateGray</h4>
+        <h4 style="background-color: LightSteelBlue;">LightSteelBlue</h4>
+        <h4 style="background-color: LightYellow;">LightYellow</h4>
+        <h4 style="background-color: Lime;">Lime</h4>
+        <h4 style="background-color: LimeGreen;">LimeGreen</h4>
+        <h4 style="background-color: Linen;">Linen</h4>
+        <h4 style="background-color: Maroon;color: aliceblue;">Maroon</h4>
+        <h4 style="background-color: MediumAquaMarine;">MediumAquaMarine</h4>
+        <h4 style="background-color: MediumBlue;color: aliceblue;">MediumBlue</h4>
+        <h4 style="background-color: AliceBlue;">AliceBlue</h4>
+        <h4 style="background-color: MediumOrchid;">MediumOrchid</h4>
+        <h4 style="background-color: MediumPurple;">MediumPurple</h4>
+        <h4 style="background-color: MediumSeaGreen;">MediumSeaGreen</h4>
+        <h4 style="background-color: MediumSlateBlue;">MediumSlateBlue</h4>
+        <h4 style="background-color: MediumSpringGreen;">MediumSpringGreen</h4>
+        <h4 style="background-color: MediumTurquoise;">MediumTurquoise</h4>
+        <h4 style="background-color: MediumVioletRed;">MediumVioletRed</h4>
+        <h4 style="background-color: MidnightBlue;color: aliceblue;">MidnightBlue</h4>
+        <h4 style="background-color: MintCream;">MintCream</h4>
+        <h4 style="background-color: MistyRose;">MistyRose</h4>
+        <h4 style="background-color: Moccasin;">Moccasin</h4>
+        <h4 style="background-color: NavajoWhite;">NavajoWhite</h4>
+        <h4 style="background-color: Navy;color: aliceblue;">Navy</h4>
+        <h4 style="background-color: OldLace;">OldLace</h4>
+        <h4 style="background-color: Olive;">Olive</h4>
+        <h4 style="background-color: OliveDrab;">OliveDrab</h4>
+        <h4 style="background-color: Orange;">Orange</h4>
+        <h4 style="background-color: OrangeRed;">OrangeRed</h4>
+        <h4 style="background-color: Orchid;">Orchid</h4>
+        <h4 style="background-color: PaleGoldenRod;">PaleGoldenRod</h4>
+        <h4 style="background-color: PaleGreen;">PaleGreen</h4>
+        <h4 style="background-color: PaleTurquoise;">PaleTurquoise</h4>
+        <h4 style="background-color: PaleVioletRed;">PaleVioletRed</h4>
+        <h4 style="background-color: PapayaWhip;">PapayaWhip</h4>
+        <h4 style="background-color: PeachPuff;">PeachPuff</h4>
+        <h4 style="background-color: Peru;">Peru</h4>
+        <h4 style="background-color: Pink;">Pink</h4>
+        <h4 style="background-color: Plum;">Plum</h4>
+        <h4 style="background-color: PowderBlue;">PowderBlue</h4>
+        <h4 style="background-color: Purple;color: aliceblue;">Purple</h4>
+        <h4 style="background-color: RebeccaPurple;color: aliceblue;">RebeccaPurple</h4>
+        <h4 style="background-color: Red;color: aliceblue;">Red</h4>
+        <h4 style="background-color: RosyBrown;">RosyBrown</h4>
+        <h4 style="background-color: RoyalBlue;">RoyalBlue</h4>
+        <h4 style="background-color: SaddleBrown;color: aliceblue;">SaddleBrown</h4>
+        <h4 style="background-color: Salmon;">Salmon</h4>
+        <h4 style="background-color: SandyBrown;">SandyBrown</h4>
+        <h4 style="background-color: SeaGreen;color: aliceblue;">SeaGreen</h4>
+        <h4 style="background-color: SeaShell;">SeaShell</h4>
+        <h4 style="background-color: Sienna;color: aliceblue;">Sienna</h4>
+        <h4 style="background-color: Silver;">Silver</h4>
+        <h4 style="background-color: SkyBlue;">SkyBlue</h4>
+        <h4 style="background-color: SlateBlue;">SlateBlue</h4>
+        <h4 style="background-color: SlateGray;color: aliceblue;">SlateGray</h4>
+        <h4 style="background-color: Snow;">Snow</h4>
+        <h4 style="background-color: SpringGreen;">SpringGreen</h4>
+        <h4 style="background-color: SteelBlue;">SteelBlue</h4>
+        <h4 style="background-color: Tan;">Tan</h4>
+        <h4 style="background-color: Teal;">Teal</h4>
+        <h4 style="background-color: Thistle;">Thistle</h4>
+        <h4 style="background-color: Tomato;">Tomato</h4>
+        <h4 style="background-color: Turquoise;">Turquoise</h4>
+        <h4 style="background-color: Violet;">Violet</h4>
+        <h4 style="background-color: Wheat;">Wheat</h4>
+        <h4 style="background-color: White;">White</h4>
+        <h4 style="background-color: WhiteSmoke;">WhiteSmoke</h4>
+        <h4 style="background-color: Yellow;">Yellow</h4>
+        <h4 style="background-color: YellowGreen;">YellowGreen</h4>
+        <h4 style="background-color: magenta;">magenta</h4>
+
+
+    </div>
+
+    <div class="btn" ">
+        <a href="comment.html">Prev  </a>
+        <a href=" index.html">Home </a>
+        <a href="css.html">Next  </a>
+    </div>
+
+
+
+
+</body>
+
+</html>

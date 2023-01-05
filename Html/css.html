@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charsF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Style Css </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0px;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75)), url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        .logo {
+            margin-top: 20px;
+            padding: 50px 0px;
+            text-align: center;
+
+        }
+
+        .logo img {
+            margin-left: 75px;
+            float: left;
+            height: 70px;
+            width: 70px;
+        }
+
+        .logo a {
+            margin-right: 130px;
+            color: white;
+            font-size: 50px;
+            font-weight: 250;
+        }
+
+        span {
+            color: crimson;
+            font-size: 60px;
+            font-weight: 350;
+        }
+         
+        .menu {
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            padding: 40px 50px;
+            border-radius: 25px;
+
+        }
+
+        .menu h1 {
+            padding: 10px 40px;
+            border-radius: 15px;
+            width: 400px;
+            background-color: crimson;
+            margin: 20px;
+            color: white;
+            font-size: 25px;
+            font-weight: 200;
+        }
+
+        .menu h3 {
+            padding: 10px 30px;
+            font-size: 20px;
+            font-weight: 100;
+            margin: 10px 0px;
+            color: white;
+
+        }
+
+        .menu ul {
+            list-style: none;
+        }
+
+        .menu li {
+            padding: 10px 0px;
+            font-size: 20px;
+            font-weight: 100;
+            margin: 10px 0px;
+            color: white;
+
+        }
+
+        .btn {
+            margin: auto;
+            margin-top: 3%;
+            margin-bottom: 100px;
+            padding-top: 70px;
+            text-align: center;
+
+        }
+
+        .btn a {
+            margin: 0px 30px;
+            background-color: crimson;
+            color: white;
+            font-size: 150%;
+            font-weight: 100;
+            padding: 10px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .btn a:hover {
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="logo">
+        <a href="index.html"> <img src="html.png" alt=""> </a> 
+        <a href="#"> <span> HTML</span> Style Css </a>
+</section>
+
+
+    <div class="menu">
+        
+        <h1>What is CSS?</h1>
+        <h3>Cascading Style Sheets (CSS) is used to format the layout of a webpage.</h3>
+        <h3>With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are
+            positioned and laid out, what background images or background colors are to be used, different displays for
+            different devices and screen sizes, and much more!</h3>
+        <h1>Using CSS</h1>
+        <h3>CSS can be added to HTML documents in 3 ways:</h3>
+        <ul>
+            <li>Inline - by using the style attribute inside HTML elements</li>
+            <li>Internal - by using a &lt;style&gt; element in the &lt;head&gt; section</li>
+            <li>External - by using a &lt;link&gt; element to link to an external CSS file</li>
+        </ul>
+        <h3>The most common way to add CSS, is to keep the styles in external CSS files.</h3>
+        <h3>However, in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and
+            easier for you to try it yourself.</h3>
+        <h1>Inline CSS</h1>
+        <h3>An inline CSS is used to apply a unique style to a single HTML element.</h3>
+        <h3>An inline CSS uses the style attribute of an HTML element.</h3>
+        <h3>The following example sets the text color of the &lt;h1&gt; element to blue, and the text color of the
+            &lt;p&gt; element to red:</h3>
+        <h3>Example :</h3>
+        <h3>&lt;h1 style="color:blue;"&gt;A Blue Heading&lt;/h1&gt;</h3>
+        <h3>&lt;p style="color:red;"&gt;A red paragraph.&lt;/p&gt;</h3>
+    
+        <h1>Internal CSS</h1>
+        <h3> for a single HTML page.</h3>
+        <h3>d&gt; section of an HTML page, within a &lt;style&gt; element.</h3>
+        <h3>The following example sets the text color of ALL the &lt;h1&gt;
+        text color of ALL the &lt;p&gt; elements to red. In addition, the
+        " background color: </h3>
+        <h3>&lt;head&gt;</h3>
+        <h3>&lt;style&gt;</h3>
+        <h3>body {background-color: powderblue;}</h3>
+        <h3>h1 {color: blue;}</h3>
+        <h3>p {color: red;}</h3>
+        <h3>&lt;/style&gt;</h3>
+        <h3>&lt;/head&gt;</h3>
+
+        <h1>External CSS</h1>
+        <h3>An external style sheet is used to define the style for many HTML pages.</h3>
+        <h3>To use an external style sheet, add a link to it in the &lt;head&gt; section of each HTML page:</h3>
+        <h3>&lt;head&gt;</h3>
+        <h3>&lt;link rel="stylesheet" href="styles.css"&gt;</h3>
+        <h3>&lt;/head&gt;</h3>
+        <h3>The external style sheet can be written in any text editor. The file must not contain any HTML code, and
+            must be saved with a .css extension.</h3>
+        <h3>Here is what the "styles.css" file looks like:</h3>
+        <h3>body {</h3>
+        <h3> background-color: powderblue;</h3>
+        <h3>}</h3>
+        <h3>h1 {</h3>
+        <h3> color: blue;</h3>
+        <h3>}</h3>
+        <h3>p {</h3>
+        <h3> color: red;</h3>
+        <h3>}</h3>
+        <h3>Tip: With an external style sheet, you can change the look of an
+            entire web site, by changing one file!</h3>
+
+        <h1>CSS Colors, Fonts and Sizes</h1>
+        <h3>Here, we will demonstrate some commonly used CSS properties. You will learn more about them later.</h3>
+        <h3>The CSS color property defines the text color to be used.</h3>
+        <h3>The CSS font-family property defines the font to be used.</h3>
+        <h3>The CSS font-size property defines the text size to be used.</h3>
+    
+        <h1>CSS Border</h1>
+        <h3>The CSS border property defines a border around an HTML element.</h3>
+        <h3>Tip: You can define a border for nearly all HTML elements.</h3>
+        <h3>Example :</h3>
+        <h3>Use of CSS border property: </h3>
+        <h3>p {</h3>
+        <h3> border: 2px solid powderblue;</h3>
+        <h3>}</h3>
+
+
+                <h1>CSS Padding</h1>
+        <h3>The CSS padding property defines a padding (space) between the text and the border.</h3>
+        <h3>Example :</h3>
+        <h3>Use of CSS border and padding properties:</h3>
+        <h3>p {</h3>
+        <h3> border: 2px solid powderblue;</h3>
+        <h3> padding: 30px;</h3>
+        <h3>}</h3>
+    
+        <h1>CSS Margin</h1>
+        <h3>The CSS margin property defines a margin (space) outside the border.</h3>
+        <h3>Example :</h3>
+        <h3>Use of CSS border and margin properties:</h3>
+        <h3>p {</h3>
+        <h3> border: 2px solid powderblue;</h3>
+        <h3> margin: 50px;</h3>
+        <h3>}</h3>
+    
+        <h1>Link to External CSS</h1>
+        <h3>External style sheets can be referenced with a full URL or with a path relative to the current web page.
+        </h3>
+        <h3>Example :</h3>
+        <h3>This example uses a full URL to link to a style sheet:</h3>
+        <h3>&lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt;</h3>
+
+        <h3>Example :</h3>
+        <h3>This example links to a style sheet located in the html folder on the current web site: </h3>
+        <h3>&lt;link rel="stylesheet" href="/html/styles.css"&gt;</h3>
+
+        <h3>Example :</h3>
+        <h3>This example links to a style sheet located in the same folder as the current page:</h3>
+        <h3>&lt;link rel="stylesheet" href="styles.css"&gt;</h3>
+
+    </div>
+
+
+    <div class="btn">
+        <a href="color.html">Prev  </a>
+        <a href=" index.html">Home </a>
+        <a href="link.html">Next </a>
+    </div>
+
+
+
+
+</body>
+
+</html>

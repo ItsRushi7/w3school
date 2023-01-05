@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charsF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Block </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0px;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75)), url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        .logo {
+            margin-top: 20px;
+            padding: 50px 0px;
+            text-align: center;
+
+        }
+
+        .logo img {
+            margin-left: 75px;
+            float: left;
+            height: 70px;
+            width: 70px;
+        }
+
+        .logo a {
+            margin-right: 130px;
+            color: white;
+            font-size: 50px;
+            font-weight: 250;
+        }
+
+        span {
+            color: crimson;
+            font-size: 60px;
+            font-weight: 350;
+        }
+
+        .div1 {
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            padding: 40px 50px;
+            border-radius: 25px;
+
+        }
+
+        .div1 h1 {
+            padding: 10px 40px;
+            border-radius: 15px;
+            width: 550px;
+            background-color: crimson;
+            margin: 20px;
+            color: white;
+            font-size: 25px;
+            font-weight: 200;
+        }
+
+        .div1 h3 {
+            padding: 10px 30px;
+            font-size: 20px;
+            font-weight: 100;
+            margin: 10px 0px;
+            color: white;
+
+        }
+
+        .btn {
+            margin-top: 2%;
+            margin-bottom: 100px;
+            padding-top: 70px;
+            text-align: center;
+        }
+
+        .btn a {
+            margin: auto 30px;
+            background-color: crimson;
+            color: white;
+            font-size: 150%;
+            font-weight: 100;
+            padding: 10px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="logo">
+        <a href="index.html"> <img src="html.png" alt=""> </a>
+        <a href="#"> <span> HTML</span> Block and Inline Elements </a>
+    </section>
+    <div class="div1">
+        <h1>HTML Block and Inline Elements</h1>
+        <h3>Every HTML element has a default display value, depending on what type of element it is</h3>
+        <h3>There are two display values: block and inline</h3>
+        <h1>Block-level Elements</h1>
+        <h3>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element </h3>
+        <h3>  A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+        </h3>
+        <h3> Two commonly used block elements are: &lt;p&gt; and &lt;div&gt; </h3>
+        <h3> The   &lt;p&gt; element defines a paragraph in an HTML document</h3>
+        <h3> The   &lt;div&gt; element defines a division or a section in an HTML document </h3>
+       <h3 style="border-width:1px;border-style:solid;padding:5px;">
+        The &lt;p&gt; element is a block-level element</h3>
+        <h3 style="border-width:1px;border-style:solid;padding:5px;">
+            The &lt;div&gt; element is a block-level element </h3>
+            <h1>Example</h1>
+            <h3>
+                &lt;p&gt; Hello World &lt;/p&gt;<br>&lt;div&gt; Hello World &lt;/div&gt;
+            </h3>
+            <h1> block-level elements in HTML</h1>
+            <h3>
+                <pre>
+    &lt;address&gt;   &lt;article&gt;   &lt;aside&gt;   &lt;blockquote&gt;  &lt;canvas&gt;     &lt;p&gt;
+    &lt;div&gt;       &lt;dl&gt;        &lt;dt&gt;      &lt;fieldset&gt;    &lt;figcaption&gt; &lt;figure&gt;
+    &lt;footer&gt;    &lt;form&gt;      &lt;header&gt;  &lt;hr&gt;          &lt;dd&gt;         &lt;video&gt;
+    &lt;li&gt;        &lt;main&gt;      &lt;nav&gt;     &lt;noscript&gt;    &lt;ol&gt;         &lt;h1&gt;
+    &lt;pre&gt;       &lt;section&gt;   &lt;table&gt;   &lt;tfoot&gt;       &lt;ul&gt;         &lt;h6&gt;
+                 </pre>
+            </h3>
+        <h1> Inline Elements </h1>
+        <h3> An inline element does not start on a new line </h3>
+        <h3> An inline element only takes up as much width as necessary </h3>
+        <h3> This is a &lt;span&gt; element inside a paragraph </h3>
+        <h1>inline elements in HTML </h1>
+        <h3>
+            <pre>
+    &lt;a&gt;       &lt;abbr&gt;    &lt;acronym&gt;  &lt;b&gt;       &lt;bdo&gt;       &lt;big&gt; 
+    &lt;button&gt;  &lt;cite&gt;    &lt;code&gt;     &lt;dfn&gt;     &lt;em&gt;        &lt;i&gt;
+    &lt;img&gt;     &lt;input&gt;   &lt;kdb&gt;      &lt;label&gt;   &lt;map&gt;       &lt;object&gt;
+    &lt;output&gt;  &lt;q&gt;       &lt;samp&gt;     &lt;script&gt;  &lt;select&gt;    &lt;small&gt;
+    &lt;span&gt;    &lt;strong&gt;  &lt;sub&gt;      &lt;sup&gt;     &lt;textarea&gt;  &lt;tt&gt; 
+    &lt;time&gt;    &lt;var&gt;     &lt;br&gt;
+            </pre>
+        </h3>
+
+        <h1>The &lt;div&gt; Element </h1>
+        <h3>The &lt;div&gt; element is often used as a container for other HTML elements</h3>
+        <h3>The &lt;div&gt; element has no required attributes, but style, class and id are common</h3>
+        <h3> When used together with CSS, the &lt;div&gt; element can be used to style blocks of content</h3>
+
+        <h1> Example </h1>
+        <h3>
+                &lt;div style=&quot;background-color:black;color:white;padding:20px;&quot;&gt;<br>
+                 &nbsp; &lt;h2&gt;London&lt;/h2&gt;<br>&nbsp; &lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;<br>
+                 &lt;/div&gt;    
+        </h3>
+    </div>
+
+   
+    <div class="btn">
+        <a href="list.html">Prev </a>
+        <a href=" index.html">Home </a>
+        <a href="class.html">Next </a>
+    </div>
+
+</body>
+
+</html>

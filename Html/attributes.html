@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charsF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Attributes </title>
+    <link rel="icon" type="image" href="html.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        /* custom scroll bar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75)), url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            padding: 40px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            display: flex;
+            height: 60px;
+            width: 60px;
+        }
+
+        .logo a {
+            margin-left: 20px;
+            font-size: 45px;
+            font-weight: 310;
+            color: white;
+        }
+
+        span {
+            color: crimson;
+            font-size: 50px;
+            font-weight: 350;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 30px 0px 0px 0px;
+        }
+
+        .div1 {
+            width: 30%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 30px 10px;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .div1 h1 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 180px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div1 ul {
+            list-style: none;
+            padding: 0px 20px;
+            margin: 20px 0px;
+        }
+
+        .div1 li {
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+        .div2 {
+            width: 30%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 30px 10px;
+            margin: -140px 0px 0px 0px;
+        }
+
+        .div2 h1 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 195px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div2 ul {
+            list-style: none;
+            padding: 0px 20px;
+            margin: 20px 0px;
+        }
+
+        .div2 li {
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+        .div3 {
+            width: 30%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 45px 10px;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .div3 h1 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 180px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div3 ul {
+            list-style: none;
+            padding: 0px 20px;
+            margin: 20px 0px;
+        }
+
+        .div3 li {
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px auto;
+            padding: 0px 0px 0px 0px;
+        }
+
+
+        .div4 {
+            width: 30%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 30px 10px;
+            margin: -105px 0px 0px 0px;
+        }
+
+        .div4 h1 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 320px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div4 ul {
+            list-style: none;
+            padding: 0px 20px;
+            margin: 20px 0px;
+        }
+
+        .div4 li {
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+
+        .div5 {
+            width: 70%;
+            border-radius: 15px;
+            background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            padding: 30px 10px;
+            margin: 0px 0px 0px;
+        }
+
+        .div5 h1 {
+            font-size: 20px;
+            font-weight: 110;
+            color: #fff;
+            background-color: crimson;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .div5 ul {
+            list-style: none;
+            padding: 0px 250px;
+            margin: 20px 0px;
+        }
+
+        .div5 li {
+            font-size: 20px;
+            font-weight: 210;
+            color: white;
+            line-height: 35px;
+        }
+        
+        .btn {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 60px 0px;
+        }
+
+        .btn a {
+            background: crimson;
+            color: #fff;
+            font-size: 20px;
+            padding: 12px 36px;
+            margin: 0px 20px;
+            font-weight: 400;
+            border-radius: 6px;
+            border: 2px solid crimson;
+            transition: all 0.3s ease;
+        }
+
+        .btn a:hover {
+            color: white;
+            background: none;
+        }
+
+        /* Media Quarey*/
+        @media(max-width:450px) {
+
+            .navbar {
+                position: fixed;
+                width: 100%;
+                background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+                padding: 15px 0px;
+            }
+
+            .logo img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .logo a {
+                margin: 0px 0px 0px 10px;
+                font-size: 20px;
+            }
+
+            span {
+                font-size: 25px;
+            }
+
+            .container,
+            .container1,
+            .container2 {
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .div1 {
+                width: 100%;
+                margin: 60px 0px 0px;
+                border-radius: 0px;
+                background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            }
+
+            .div1 h1 {
+                font-size: 18px;
+                font-weight: 110;
+                font-weight: 110;
+                width: 170px;
+            }
+
+            .div1 li {
+                font-size: 15px;
+                font-weight: 210;
+            }
+
+            .div2 {
+                width: 100%;
+                margin: 0px 0px 0px;
+                border-radius: 0px;
+                background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            }
+
+            .div2 h1 {
+                font-size: 18px;
+                font-weight: 110;
+                font-weight: 110;
+                width: 180px;
+            }
+
+            .div2 li {
+                font-size: 15px;
+                font-weight: 210;
+            }
+
+            .div3 {
+                width: 100%;
+                margin: 0px 0px 0px;
+                border-radius: 0px;
+                background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            }
+
+            .div3 h1 {
+                font-size: 18px;
+                font-weight: 110;
+                font-weight: 110;
+                width: 160px;
+            }
+
+            .div3 li {
+                font-size: 15px;
+                font-weight: 210;
+            }
+
+            .div4 {
+                width: 100%;
+                margin: 00px 0px 0px;
+                border-radius: 0px;
+                background: linear-gradient(90deg, rgba(37, 48, 59, 0.842), rgba(19, 38, 58, 0.842));
+            }
+
+            .div4 h1 {
+                font-size: 18px;
+                font-weight: 110;
+                font-weight: 110;
+                width: 295px;
+            }
+
+            .div4 li {
+                font-size: 15px;
+                font-weight: 210;
+            }
+
+            .div5 {
+                width: 100%;
+                margin: 0px 0px 0px;
+                border-radius: 0px;
+                background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            }
+
+            .div5 h1 {
+                font-size: 18px;
+                font-weight: 110;
+                font-weight: 110;
+                width: 165px;
+            }
+
+            .div5 ul {
+                padding: 0px 20px;
+            }
+
+            .div5 li {
+                font-size: 15px;
+                font-weight: 210;
+            }
+
+
+            .btn {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 30px 0px;
+            }
+
+            .btn a {
+                background-color: crimson;
+                color: white;
+                font-size: 10px;
+                font-weight: 70;
+                margin: 0px 10px;
+                padding: 5px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="html.html"><img src="html.png" alt=""> </a>
+            <a href="#"> <span> HTML</span> Attribute </a>
+        </div>
+    </nav>
+
+    <nav class="container">
+        <div class="div1">
+            <h1>HTML Attributes</h1>
+            <ul>
+                <li>All HTML elements can have attributes</li>
+                <li>Attributes provide additional information about elements</li>
+                <li>Attributes are always specified in the start tag</li>
+                <li>Attributes usually come in name/value pairs like: name="value"</li>
+            </ul>
+        </div>
+
+        <div class="div2">
+            <h1> The href Attribute </h1>
+            <ul>
+                <li> The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the link
+                    goes to </li>
+            </ul>
+        </div>
+
+        <div class="div3">
+            <h1> The alt Attribute </h1>
+            <ul>
+                <li> The required alt attribute for the &lt;img&gt; tag specifies an alternate text for an image, <br>
+                    if
+                    the image for some reason cannot be displayed. This can be due to a slow connection, <br> or an
+                    error in
+                    the src attribute, or if the user uses a screen reader </li>
+            </ul>
+        </div>
+
+        <div class="div4">
+            <h1> The width and height Attributes </h1>
+            <ul>
+                <li> The &lt;img&gt; tag should also contain the width and height attributes, which specify the width
+                    and
+                    height <br>
+                    of the image (in pixels) </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="container1">
+        <div class="div5">
+            <h1>The src Attribute</h1>
+            <ul>
+                <li> The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute <br> specifies the
+                    path to the image to be displayed</li>
+                <li> There are two ways to specify the URL in the src attribute</li>
+                <li>Absolute URL - Links to an external image that is hosted on another website. </li>
+                <li>Notes: External images might be under copyright. If you do not get permission to use it, <br> you
+                    may be
+                    in violation of copyright laws. In addition, <br> you cannot control external images; it can
+                    suddenly be
+                    removed or changed</li>
+                <li>Relative URL - Links to an image that is hosted within the website. <br> Here, the URL does not
+                    include
+                    the domain name. If the URL begins without a slash, <br> it will be relative to the current page.
+                    Example: src="img_girl.jpg". If the URL begins with a slash, <br> it will be relative to the domain.
+                    Example: src="/images/img_girl.jpg"</li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div class="btn" ">
+        <a href=" element.html">Prev </a>
+        <a href="html.html">Home </a>
+        <a href="heading.html">Next </a>
+    </div>
+
+</body>
+
+</html>

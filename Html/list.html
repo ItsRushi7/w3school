@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charsF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML List </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0px;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75)), url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        .logo {
+            margin-top: 20px;
+            padding: 50px 0px;
+            text-align: center;
+
+        }
+
+        .logo img {
+            margin-left: 75px;
+            float: left;
+            height: 70px;
+            width: 70px;
+        }
+
+        .logo a {
+            margin-right: 130px;
+            color: white;
+            font-size: 50px;
+            font-weight: 250;
+        }
+
+        span {
+            color: crimson;
+            font-size: 60px;
+            font-weight: 350;
+        }
+
+        .div1 {
+            background: linear-gradient(90deg, rgba(72, 84, 97, 0.60), rgba(40, 49, 59, 0.75));
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            padding: 40px 50px;
+            border-radius: 25px;
+
+        }
+
+        .div1 h1 {
+            padding: 10px 40px;
+            border-radius: 15px;
+            width: 550px;
+            background-color: crimson;
+            margin: 20px;
+            color: white;
+            font-size: 25px;
+            font-weight: 200;
+        }
+
+        .div1 h3 {
+            padding: 10px 30px;
+            font-size: 20px;
+            font-weight: 100;
+            margin: 10px 0px;
+            color: white;
+
+        }
+
+        .div1 ul {
+            padding: 10px 30px;
+            font-size: 20px;
+            font-weight: 100;
+            margin: 10px 0px;
+            color: white;
+        }
+
+        .div1 ol {
+            padding: 10px 30px;
+            font-size: 20px;
+            font-weight: 100;
+            margin: 10px 0px;
+            color: white;
+        }
+
+        .div1 li {
+            padding: 10px 30px;
+            font-size: 20px;
+            font-weight: 100;
+            margin: 10px 0px;
+            color: white;
+        }
+
+        .btn {
+            margin-top: 2%;
+            margin-bottom: 100px;
+            padding-top: 70px;
+            text-align: center;
+        }
+
+        .btn a {
+            margin: auto 30px;
+            background-color: crimson;
+            color: white;
+            font-size: 150%;
+            font-weight: 100;
+            padding: 10px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="logo">
+        <a href="index.html"> <img src="html.png" alt=""> </a>
+        <a href="#"> <span> HTML</span> List </a>
+    </section>
+    <div class="div1">
+        <h1> HTML Lists </h1>
+        <h3> HTML lists allow web developers to group a set of related items in lists
+        </h3>
+        <pre></pre>
+        <ul>  An unordered HTML list   
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        </ul> 
+        <br>
+
+        <ol> An ordered HTML list
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+        </ol>
+    </pre>
+
+    <h1>Unordered HTML List</h1>
+    <h3>An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the  &lt;li&gt; tag </h3>
+    <h3>The list items will be marked with bullets (small black circles) by default</h3>
+    <h3>Example</h3>
+    <h3>&lt;ul&gt;<br>
+        &nbsp;
+        &lt;li&gt;Coffee&lt;/li&gt;<br>&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>
+        &nbsp;
+        &lt;li&gt;Milk&lt;/li&gt;<br>
+        &lt;/ul&gt;
+    </h3>
+
+    <h1> Ordered HTML List </h1>
+    <h3> An ordered list starts with the  &lt;ol&gt; tag. Each list item starts with the  &lt;li&gt; tag.</h3>
+    <h3> The list items will be marked with numbers by default</h3>
+    <h3>Example</h3>
+    <h3> &lt;ol&gt;<br>
+        &nbsp;
+        &lt;li&gt;Coffee&lt;/li&gt;<br>&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>
+        &nbsp;
+        &lt;li&gt;Milk&lt;/li&gt;<br>
+        &lt;/ol&gt;
+    </h3>
+
+    <h1>  HTML Description Lists </h1>
+    <h3>  HTML also supports description lists </h3>
+    <h3>  The &lt;dl&gt; tag defines the description list, the   &lt;dt&gt; tag defines the term (name), and the   &lt;dd&gt; tag describes each term </h3>
+    <h3>Example</h3>
+    <h3> &lt;dl&gt;<br>
+        &nbsp;
+        &lt;dt&gt;Coffee&lt;/dt&gt;<br>
+        &nbsp;
+        &lt;dd&gt;- black hot drink&lt;/dd&gt;<br>
+        &nbsp;
+        &lt;dt&gt;Milk&lt;/dt&gt;<br>
+        &nbsp;
+        &lt;dd&gt;- white cold drink&lt;/dd&gt;<br>
+        &lt;/dl&gt;
+    </h3>
+    <h1> HTML List Tags </h1>
+    <h3>
+        <table>
+        <tr>
+            <th>Tag</th>
+            <th>Description</th>
+            </tr>
+            <tr>
+            <td>&lt;ul&gt;</td>
+            <td>Defines an unordered list</td>
+            </tr>
+            <tr>
+            <td>&lt;ol&gt;</td>
+            <td>Defines an ordered list</td>
+            </tr>
+            <tr>
+            <td>&lt;li&gt;</td>
+            <td>Defines a list item</td>
+            </tr>
+            <tr>
+            <td>&lt;dl&gt;</td>
+            <td>Defines a description list</td>
+            </tr>
+            <tr>
+            <td>&lt;dt&gt;</td>
+            <td>Defines a term in a description list</td>
+            </tr>
+            <tr>
+            <td>&lt;dd&gt;</td>
+            <td>Describes the term in a description list</td>
+            </tr>
+        </table>
+    </h3>
+         
+
+    </div>
+
+    <div class="btn">
+        <a href="table.html">Prev </a>
+        <a href=" index.html">Home </a>
+        <a href="block.html">Next </a>
+    </div>
+
+</body>
+
+</html>
